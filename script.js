@@ -5,7 +5,7 @@ const oneDay = 1000 * 60 * 60 * 24
 const day = Math.floor(diff / oneDay)
 
 async function getWord(day) {
-  const response = await fetch("/words.json")
+  const response = await fetch("./words.json")
   const data = await response.json()
   const word = data[day]
 
